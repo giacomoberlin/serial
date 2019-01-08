@@ -139,8 +139,6 @@ func OpenPort(c *Config) (*Port, error) {
 	return openPort(c.Name, c.Baud, size, par, stop, c.ReadTimeout)
 }
 
-func whatNot_test() {
-}
 
 // Converts the timeout values for Linux / POSIX systems
 func posixTimeoutValues(readTimeout time.Duration) (vmin uint8, vtime uint8) {
